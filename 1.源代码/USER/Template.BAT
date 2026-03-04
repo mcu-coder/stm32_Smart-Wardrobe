@@ -1,0 +1,32 @@
+SET PATH=E:\MDK\ARM\ARMCC\Bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Java\jdk-11\bin;E:\javaEveiment\apache-maven-3.8.1\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;E:\mysql\bin;C:\Program Files\PuTTY\;C:\Users\User\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\User\AppData\Local\Programs\Python\Python36\;C:\Users\User\AppData\Local\Microsoft\WindowsApps;;E:\idea\IntelliJ IDEA 2021.1.2\bin;;E:\vscode\Microsoft VS Code\bin;C:\Infineon\LauncherService
+SET CPU_TYPE=STM32F103C6
+SET CPU_VENDOR=STMicroelectronics
+SET UV2_TARGET=Template
+SET CPU_CLOCK=0x00B71B00
+"E:\MDK\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\main.__i"
+"E:\MDK\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\stm32f10x_it.__i"
+"E:\MDK\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\system_stm32f10x.__i"
+"E:\MDK\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\gpio.__i"
+"E:\MDK\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\key.__i"
+"E:\MDK\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\oled.__i"
+"E:\MDK\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\adc.__i"
+"E:\MDK\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\motor_duoji.__i"
+"E:\MDK\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\ds18b20.__i"
+"E:\MDK\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\delay.__i"
+"E:\MDK\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\sys.__i"
+"E:\MDK\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\usart.__i"
+"E:\MDK\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\core_cm3.__i"
+"E:\MDK\ARM\ARMCC\Bin\ArmAsm" --Via "..\obj\startup_stm32f10x_md._ia"
+"E:\MDK\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\misc.__i"
+"E:\MDK\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\stm32f10x_adc.__i"
+"E:\MDK\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\stm32f10x_exti.__i"
+"E:\MDK\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\stm32f10x_flash.__i"
+"E:\MDK\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\stm32f10x_gpio.__i"
+"E:\MDK\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\stm32f10x_i2c.__i"
+"E:\MDK\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\stm32f10x_rcc.__i"
+"E:\MDK\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\stm32f10x_rtc.__i"
+"E:\MDK\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\stm32f10x_sdio.__i"
+"E:\MDK\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\stm32f10x_tim.__i"
+"E:\MDK\ARM\ARMCC\Bin\ArmCC" --Via "..\obj\stm32f10x_usart.__i"
+"E:\MDK\ARM\ARMCC\Bin\ArmLink" --Via "..\OBJ\project.lnp"
+"E:\MDK\ARM\ARMCC\Bin\fromelf.exe" "..\OBJ\project.axf" --i32combined --output "..\OBJ\project.hex"
